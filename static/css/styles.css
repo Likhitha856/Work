@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 20px 0;
+    color: #444;
+}
+
+/* Header */
+.header {
+    background-color: #3b5998;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #666;
+}
+
+/* File Explorer */
+.file-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.file-item span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.file-actions a,
+.file-actions form {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #3b5998;
+}
+
+.file-actions form {
+    display: inline-block;
+}
+
+.file-actions button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-actions button:hover {
+    background-color: #c0392b;
+}
+
+/* Upload Modal */
+#uploadModal, #automatedScanModal {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#uploadModal form, #automatedScanModal form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+#uploadModal form input[type="file"], #automatedScanModal form input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+
+#uploadModal form button, #automatedScanModal form button {
+    padding: 10px 15px;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#uploadModal form button:hover, #automatedScanModal form button:hover {
+    background-color: #2e4373;
+}
+
+#uploadModal button, #automatedScanModal button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#uploadModal button:hover, #automatedScanModal button:hover {
+    background-color: #555;
+}
+
+/* Flash Messages */
+.flash-message {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.btn-blue {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: #2e4373;
+}
